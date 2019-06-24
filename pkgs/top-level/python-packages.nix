@@ -2551,6 +2551,8 @@ in {
 
   django-cors-headers = callPackage ../development/python-modules/django-cors-headers { };
 
+  django-csp = callPackage ../development/python-modules/django-csp { };
+
   django-csp-nonce = callPackage ../development/python-modules/django-csp-nonce { };
 
   django-debug-toolbar = callPackage ../development/python-modules/django-debug-toolbar { };
@@ -5219,7 +5221,11 @@ in {
 
   pymacaroons = callPackage ../development/python-modules/pymacaroons { };
 
-  pynacl = callPackage ../development/python-modules/pynacl { };
+  pynacl = self.pynacl_1_3_0;
+
+  pynacl_1_3_0 = callPackage ../development/python-modules/pynacl/1_3_0.nix { };
+
+  pynacl_1_0_1 = callPackage ../development/python-modules/pynacl/1_0_1.nix { };
 
   service-identity = callPackage ../development/python-modules/service_identity { };
 

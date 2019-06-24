@@ -1,5 +1,5 @@
-{ stdenv, fetchurl, buildPythonPackage,
-  mock, django, pynacl }:
+{ stdenv, fetchurl, buildPythonPackage, mock, django_2_0_2, pynacl_1_0_1 }:
+
 buildPythonPackage rec {
   pname = "django-csp-nonce";
   version = "1.0b20";
@@ -13,7 +13,7 @@ buildPythonPackage rec {
 
   buildInputs = [ mock ];
 
-  propagatedBuildInputs = [ django pynacl ];
+  propagatedBuildInputs = [ django_2_0_2 pynacl_1_0_1 ];
 
   meta = with stdenv.lib; {
     description = "DCN is a Content-Security-Policy nonce injection support system for Django and CSP.";
@@ -21,6 +21,3 @@ buildPythonPackage rec {
     license = licenses.mpl20;
   };
 }
-
-
-
