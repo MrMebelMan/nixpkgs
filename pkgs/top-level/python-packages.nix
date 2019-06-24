@@ -2545,6 +2545,8 @@ in {
 
   django-csp-nonce = callPackage ../development/python-modules/django-csp-nonce { };
 
+  django-debug-toolbar = callPackage ../development/python-modules/django-debug-toolbar { };
+
   django-discover-runner = callPackage ../development/python-modules/django-discover-runner { };
 
   django_environ = callPackage ../development/python-modules/django_environ { };
