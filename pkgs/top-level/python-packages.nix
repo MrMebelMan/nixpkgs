@@ -2543,6 +2543,8 @@ in {
 
   django-cors-headers = callPackage ../development/python-modules/django-cors-headers { };
 
+  django-csp-nonce = callPackage ../development/python-modules/django-csp-nonce { };
+
   django-discover-runner = callPackage ../development/python-modules/django-discover-runner { };
 
   django_environ = callPackage ../development/python-modules/django_environ { };
