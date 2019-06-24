@@ -2559,6 +2559,8 @@ in {
 
   django-jinja = callPackage ../development/python-modules/django-jinja2 { };
 
+  django-maintenance-mode = callPackage ../development/python-modules/django-maintenance-mode { };
+
   django-pglocks = callPackage ../development/python-modules/django-pglocks { };
 
   django-picklefield = callPackage ../development/python-modules/django-picklefield { };
@@ -2568,6 +2570,8 @@ in {
   django-rest-auth = callPackage ../development/python-modules/django-rest-auth { };
 
   django-sampledatahelper = callPackage ../development/python-modules/django-sampledatahelper { };
+
+  django-simple-captcha = callPackage ../development/python-modules/django-simple-captcha { };
 
   django-sites = callPackage ../development/python-modules/django-sites { };
 
@@ -2607,6 +2611,8 @@ in {
   djangorestframework-jwt = callPackage ../development/python-modules/djangorestframework-jwt { };
 
   django-raster = callPackage ../development/python-modules/django-raster { };
+
+  django-ranged-response = callPackage ../development/python-modules/django-ranged-response { };
 
   django_redis = callPackage ../development/python-modules/django_redis { };
 
