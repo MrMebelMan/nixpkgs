@@ -2561,6 +2561,8 @@ in {
 
   django-jinja = callPackage ../development/python-modules/django-jinja2 { };
 
+  django-logentry-admin = callPackage ../development/python-modules/django-logentry-admin { };
+
   django-maintenance-mode = callPackage ../development/python-modules/django-maintenance-mode { };
 
   django-pglocks = callPackage ../development/python-modules/django-pglocks { };
