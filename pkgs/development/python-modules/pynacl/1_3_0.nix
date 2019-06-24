@@ -36,7 +36,7 @@ buildPythonPackage rec {
   '';
 
   meta = with stdenv.lib; {
-    maintainers = with maintainers; [ va1entin ];
+    maintainers = with maintainers; [ va1entin mrmebelman ];
     description = "Python binding to the Networking and Cryptography (NaCl) library";
     homepage = https://github.com/pyca/pynacl/;
     license = licenses.asl20;

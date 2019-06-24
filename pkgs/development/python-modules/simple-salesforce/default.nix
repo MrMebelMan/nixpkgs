@@ -19,6 +19,7 @@ buildPythonPackage rec {
     description = "A basic Salesforce.com REST API client";
     homepage = https://github.com/simple-salesforce/simple-salesforce;
     license = licenses.asl20;
+    maintainers = with maintainers; [ mrmebelman ];
   };
 }
 

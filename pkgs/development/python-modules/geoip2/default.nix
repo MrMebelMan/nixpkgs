@@ -19,6 +19,7 @@ buildPythonPackage rec {
     description = "This package provides an API for the GeoIP2 web services and databases. ";
     homepage = https://pypi.org/project/geoip2/;
     license = licenses.asl20;
+    maintainers = with maintainers; [ mrmebelman ];
   };
 }
 

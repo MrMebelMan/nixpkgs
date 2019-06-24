@@ -19,6 +19,7 @@ buildPythonPackage rec {
     description = "Shows a 503 error page when maintenance-mode is on";
     homepage = https://github.com/fabiocaccamo/django-maintenance-mode;
     license = licenses.bsd3;
+    maintainers = with maintainers; [ mrmebelman ];
   };
 }
 

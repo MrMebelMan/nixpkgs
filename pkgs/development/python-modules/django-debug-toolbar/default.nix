@@ -20,6 +20,7 @@ buildPythonPackage rec {
     description = "A configurable set of panels that display various debug information about the current request/response";
     homepage = https://github.com/jazzband/django-debug-toolbar;
     license = licenses.bsd3;
+    maintainers = with maintainers; [ mrmebelman ];
   };
 }
 

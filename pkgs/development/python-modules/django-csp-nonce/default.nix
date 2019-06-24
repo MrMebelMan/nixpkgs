@@ -19,5 +19,6 @@ buildPythonPackage rec {
     description = "DCN is a Content-Security-Policy nonce injection support system for Django and CSP.";
     homepage = https://github.com/Bennyoak/django-csp-nonce;
     license = licenses.mpl20;
+    maintainers = with maintainers; [ mrmebelman ];
   };
 }

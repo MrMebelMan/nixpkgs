@@ -19,6 +19,7 @@ buildPythonPackage rec {
     description = "A simple, lightweight library for creating background jobs, and processing them";
     homepage = https://github.com/nvie/rq/;
     license = licenses.bsd2;
+    maintainers = with maintainers; [ mrmebelman ];
   };
 }
 

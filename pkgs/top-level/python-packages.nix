@@ -2523,6 +2523,8 @@ in {
     gdal = self.gdal;
   };
 
+  django_1_6 = callPackage ../development/python-modules/django/1_6.nix { };
+
   django_2_1 = callPackage ../development/python-modules/django/2_1.nix {
     gdal = self.gdal;
   };

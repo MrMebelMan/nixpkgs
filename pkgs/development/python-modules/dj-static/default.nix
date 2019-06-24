@@ -20,6 +20,7 @@ buildPythonPackage rec {
     description = "A simple Django middleware utility that allows you to properly serve static assets from production with a WSGI server like Gunicorn";
     homepage = https://github.com/heroku-python/dj-static;
     license = licenses.bsd2;
+    maintainers = with maintainers; [ mrmebelman ];
   };
 }
 

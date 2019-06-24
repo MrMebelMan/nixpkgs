@@ -19,6 +19,7 @@ buildPythonPackage rec {
     description = "A really simple WSGI way to serve static (or mixed) content.";
     homepage = https://github.com/rmohr/static3;
     license = licenses.gpl3;
+    maintainers = with maintainers; [ mrmebelman ];
   };
 }
 
