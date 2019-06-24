@@ -1,5 +1,5 @@
-{ stdenv, fetchurl, fetchPypi, buildPythonPackage,
-  mock, django }:
+{ stdenv, fetchurl, buildPythonPackage, mock, django }:
+
 buildPythonPackage rec {
   pname = "django-simple-captcha";
   version = "0.5.11";
