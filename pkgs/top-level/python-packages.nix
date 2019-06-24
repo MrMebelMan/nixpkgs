@@ -540,6 +540,8 @@ in {
 
   matchpy = callPackage ../development/python-modules/matchpy { };
 
+  maxminddb = callPackage ../development/python-modules/maxminddb { };
+
   monty = callPackage ../development/python-modules/monty { };
 
   mininet-python = (toPythonModule (pkgs.mininet.override{ inherit python; })).py;
@@ -3136,6 +3138,8 @@ in {
 
   isort = callPackage ../development/python-modules/isort {};
 
+  isoweek = callPackage ../development/python-modules/isoweek {};
+
   jabberbot = callPackage ../development/python-modules/jabberbot {};
 
   jedi = callPackage ../development/python-modules/jedi { };
@@ -4319,6 +4323,8 @@ in {
   geoalchemy2 = callPackage ../development/python-modules/geoalchemy2 { };
 
   geopy = callPackage ../development/python-modules/geopy { };
+
+  geoip2 = callPackage ../development/python-modules/geoip2 { };
 
   django-haystack = callPackage ../development/python-modules/django-haystack { };
 
