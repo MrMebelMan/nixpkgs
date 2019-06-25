@@ -1,5 +1,4 @@
-{ stdenv, fetchPypi, buildPythonPackage,
-  mock, django }:
+{ stdenv, fetchPypi, buildPythonPackage, django_2_0_2 }:
 buildPythonPackage rec {
   pname = "django-maintenance-mode";
   version = "0.13.1";
@@ -11,9 +10,7 @@ buildPythonPackage rec {
 
   doCheck = false;
 
-  buildInputs = [ mock ];
-
-  propagatedBuildInputs = [ django ];
+  propagatedBuildInputs = [ django_2_0_2 ];
 
   meta = with stdenv.lib; {
     description = "Shows a 503 error page when maintenance-mode is on";

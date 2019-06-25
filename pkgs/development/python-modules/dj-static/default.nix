@@ -1,5 +1,5 @@
 { stdenv, fetchPypi, buildPythonPackage,
-  mock, django, static3 }:
+  django, static3 }:
 
 buildPythonPackage rec {
   pname = "dj-static";
@@ -11,8 +11,6 @@ buildPythonPackage rec {
   };
 
   doCheck = false;
-
-  buildInputs = [ mock ];
 
   propagatedBuildInputs = [ django static3 ];
 
