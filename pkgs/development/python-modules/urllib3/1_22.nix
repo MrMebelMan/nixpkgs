@@ -29,5 +29,6 @@ buildPythonPackage rec {
     description = "Powerful, sanity-friendly HTTP client for Python";
     homepage = https://github.com/shazow/urllib3;
     license = licenses.mit;
+    maintainers = with maintainers; [ mrmebelman ];
   };
 }

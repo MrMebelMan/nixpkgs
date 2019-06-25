@@ -19,6 +19,7 @@ buildPythonPackage rec {
     description = "An extremely simple, yet highly customizable Django application to add captcha images to any Django form";
     homepage = https://github.com/mbi/django-simple-captcha;
     license = licenses.mit;
+    maintainers = with maintainers; [ mrmebelman ];
   };
 }
 

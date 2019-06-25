@@ -24,5 +24,6 @@ buildPythonPackage rec {
     description = "A high-level Python Web framework";
     homepage = https://www.djangoproject.com/;
     license = licenses.bsd0;
+    maintainers = with maintainers; [ mrmebelman ];
   };
 }
