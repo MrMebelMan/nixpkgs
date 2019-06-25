@@ -1650,7 +1650,13 @@ in {
 
   openidc-client = callPackage ../development/python-modules/openidc-client {};
 
-  idna = callPackage ../development/python-modules/idna { };
+  idna = self.idna_2_8;
+
+  idna_2_8 = callPackage ../development/python-modules/idna/2_8.nix { };
+
+  idna_2_6 = callPackage ../development/python-modules/idna/2_6.nix { };
+
+  idna_2_5 = callPackage ../development/python-modules/idna/2_5.nix { };
 
   mahotas = callPackage ../development/python-modules/mahotas { };
 
@@ -1935,7 +1941,11 @@ in {
 
   dpkt = callPackage ../development/python-modules/dpkt {};
 
-  urllib3 = callPackage ../development/python-modules/urllib3 {};
+  urllib3 = self.urllib3_1_24_3;
+
+  urllib3_1_24_3 = callPackage ../development/python-modules/urllib3/1_24_3.nix {};
+
+  urllib3_1_22 = callPackage ../development/python-modules/urllib3/1_22.nix {};
 
   dropbox = callPackage ../development/python-modules/dropbox {};
 
@@ -2553,7 +2563,11 @@ in {
 
   django-cors-headers = callPackage ../development/python-modules/django-cors-headers { };
 
-  django-csp = callPackage ../development/python-modules/django-csp { };
+  django-csp = self.django-csp_3_5;
+
+  django-csp_3_5 = callPackage ../development/python-modules/django-csp/3_5.nix { };
+
+  django-csp_3_4 = callPackage ../development/python-modules/django-csp/3_4.nix { };
 
   django-csp-nonce = callPackage ../development/python-modules/django-csp-nonce { };
 
@@ -2577,7 +2591,11 @@ in {
 
   django-logentry-admin = callPackage ../development/python-modules/django-logentry-admin { };
 
-  django-maintenance-mode = callPackage ../development/python-modules/django-maintenance-mode { };
+  django-maintenance-mode = self.django-maintenance-mode_0_13_1;
+
+  django-maintenance-mode_0_13_1 = callPackage ../development/python-modules/django-maintenance-mode/0_13_1.nix { };
+
+  django-maintenance-mode_0_9_0 = callPackage ../development/python-modules/django-maintenance-mode/0_9_0.nix { };
 
   django-pglocks = callPackage ../development/python-modules/django-pglocks { };
 
@@ -2589,7 +2607,11 @@ in {
 
   django-sampledatahelper = callPackage ../development/python-modules/django-sampledatahelper { };
 
-  django-simple-captcha = callPackage ../development/python-modules/django-simple-captcha { };
+  django-simple-captcha = self.django-simple-captcha_0_5_11;
+
+  django-simple-captcha_0_5_11 = callPackage ../development/python-modules/django-simple-captcha/0_5_11.nix { };
+
+  django-simple-captcha_0_5_6 = callPackage ../development/python-modules/django-simple-captcha/0_5_6.nix { };
 
   django-sites = callPackage ../development/python-modules/django-sites { };
 
@@ -2646,7 +2668,11 @@ in {
 
   djangoql = callPackage ../development/python-modules/djangoql { };
 
-  dj-database-url = callPackage ../development/python-modules/dj-database-url { };
+  dj-database-url = self.dj-database-url_0_5_0 { };
+
+  dj-database-url_0_5_0 = callPackage ../development/python-modules/dj-database-url/0_5_0.nix { };
+
+  dj-database-url_0_4_2 = callPackage ../development/python-modules/dj-database-url/0_4_2.nix { };
 
   dj-email-url = callPackage ../development/python-modules/dj-email-url { };
 
@@ -3915,7 +3941,11 @@ in {
 
   psutil = callPackage ../development/python-modules/psutil { };
 
-  psycopg2 = callPackage ../development/python-modules/psycopg2 {};
+  psycopg2 = self.psycopg2_2_7_7;
+
+  psycopg2_2_7_7 = callPackage ../development/python-modules/psycopg2/2_7_7.nix {};
+
+  psycopg2_2_7_3_2 = callPackage ../development/python-modules/psycopg2/2_7_3_2.nix {};
 
   ptpython = callPackage ../development/python-modules/ptpython {
     prompt_toolkit = self.prompt_toolkit;
@@ -4250,7 +4280,11 @@ in {
 
   reportlab = callPackage ../development/python-modules/reportlab { };
 
-  requests = callPackage ../development/python-modules/requests { };
+  requests = self.requests_2_21_0;
+
+  requests_2_21_0 = callPackage ../development/python-modules/requests/2_21_0.nix { };
+
+  requests_2_18_4 = callPackage ../development/python-modules/requests/2_18_4.nix { };
 
   requests_download = callPackage ../development/python-modules/requests_download { };
 

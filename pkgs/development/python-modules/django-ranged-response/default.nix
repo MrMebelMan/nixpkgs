@@ -1,5 +1,5 @@
-{ stdenv, fetchurl, fetchPypi, buildPythonPackage,
-  mock, django }:
+{ stdenv, fetchurl, fetchPypi, buildPythonPackage, django_2_0_2 }:
+
 buildPythonPackage rec {
   pname = "django-ranged-response";
   version = "0.2.0";
@@ -11,9 +11,7 @@ buildPythonPackage rec {
 
   doCheck = false;
 
-  buildInputs = [ mock ];
-
-  propagatedBuildInputs = [ django ];
+  propagatedBuildInputs = [ django_2_0_2 ];
 
   meta = with stdenv.lib; {
     description = "A modified FileResponse that returns `Content-Range` headers with the HTTP response, so browsers (read Safari 9+) that request the file, can stream the response properly";

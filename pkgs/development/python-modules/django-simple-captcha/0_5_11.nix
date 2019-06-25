@@ -1,4 +1,4 @@
-{ stdenv, fetchurl, buildPythonPackage, mock, django, django-ranged-response, pillow }:
+{ stdenv, fetchurl, buildPythonPackage, mock, django_2_0_2, django-ranged-response, pillow }:
 
 buildPythonPackage rec {
   pname = "django-simple-captcha";
@@ -13,7 +13,7 @@ buildPythonPackage rec {
 
   buildInputs = [ mock ];
 
-  propagatedBuildInputs = [ django django-ranged-response pillow ];
+  propagatedBuildInputs = [ django_2_0_2 django-ranged-response pillow ];
 
   meta = with stdenv.lib; {
     description = "An extremely simple, yet highly customizable Django application to add captcha images to any Django form";
