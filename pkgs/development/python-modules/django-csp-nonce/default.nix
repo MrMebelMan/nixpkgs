@@ -1,4 +1,4 @@
-{ stdenv, fetchurl, fetchPypi, buildPythonPackage, mock, pynacl_1_0_1, django_2_0_2 }:
+{ stdenv, fetchurl, fetchPypi, buildPythonPackage, pynacl_1_0_1, django_2_0_2 }:
 
 buildPythonPackage rec {
   pname = "django-csp-nonce";

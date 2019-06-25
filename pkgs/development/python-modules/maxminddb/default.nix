@@ -1,4 +1,4 @@
-{ stdenv, fetchPypi, buildPythonPackage, mock }: #, maxminddb }:
+{ stdenv, fetchPypi, buildPythonPackage }:
 
 buildPythonPackage rec {
   pname = "maxminddb";
@@ -10,10 +10,6 @@ buildPythonPackage rec {
   };
 
   doCheck = false;
-
-  buildInputs = [ mock ];
-
-  # propagatedBuildInputs = [ maxminddb ];
 
   meta = with stdenv.lib; {
     description = "A module for reading MaxMind DB files. The module includes both a pure Python reader and an optional C extension.";

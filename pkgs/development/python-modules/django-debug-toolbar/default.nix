@@ -1,5 +1,4 @@
-{ stdenv, fetchPypi, buildPythonPackage,
-  mock, django, sqlparse }:
+{ stdenv, fetchPypi, buildPythonPackage, django_2_0_2, sqlparse }:
 
 buildPythonPackage rec {
   pname = "django-debug-toolbar";
@@ -12,9 +11,7 @@ buildPythonPackage rec {
 
   doCheck = false;
 
-  buildInputs = [ mock ];
-
-  propagatedBuildInputs = [ django sqlparse ];
+  propagatedBuildInputs = [ django_2_0_2 sqlparse ];
 
   meta = with stdenv.lib; {
     description = "A configurable set of panels that display various debug information about the current request/response";

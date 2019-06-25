@@ -1,4 +1,4 @@
-{ stdenv, fetchPypi, buildPythonPackage, mock, requests }:
+{ stdenv, fetchPypi, buildPythonPackage, requests }:
 
 buildPythonPackage rec {
   pname = "simple-salesforce";
@@ -10,8 +10,6 @@ buildPythonPackage rec {
   };
 
   doCheck = false;
-
-  buildInputs = [ mock ];
 
   propagatedBuildInputs = [ requests ];
 

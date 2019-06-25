@@ -1,4 +1,4 @@
-{ stdenv, fetchPypi, buildPythonPackage, mock }:
+{ stdenv, fetchPypi, buildPythonPackage }:
 
 buildPythonPackage rec {
   pname = "static3";
@@ -10,10 +10,6 @@ buildPythonPackage rec {
   };
 
   doCheck = false;
-
-  buildInputs = [ mock ];
-
-  # propagatedBuildInputs = [ django ];
 
   meta = with stdenv.lib; {
     description = "A really simple WSGI way to serve static (or mixed) content.";

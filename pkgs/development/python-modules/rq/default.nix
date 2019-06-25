@@ -1,4 +1,4 @@
-{ stdenv, fetchPypi, buildPythonPackage, mock, click, redis }:
+{ stdenv, fetchPypi, buildPythonPackage, click, redis }:
 
 buildPythonPackage rec {
   pname = "rq";
@@ -10,8 +10,6 @@ buildPythonPackage rec {
   };
 
   doCheck = false;
-
-  buildInputs = [ mock ];
 
   propagatedBuildInputs = [ click redis ];
 

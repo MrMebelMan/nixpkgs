@@ -1,5 +1,4 @@
-{ stdenv, fetchPypi, buildPythonPackage,
-  mock, django }:
+{ stdenv, fetchPypi, buildPythonPackage, django_2_0_2 }:
 
 buildPythonPackage rec {
   pname = "django-logentry-admin";
@@ -12,9 +11,7 @@ buildPythonPackage rec {
 
   doCheck = false;
 
-  buildInputs = [ mock ];
-
-  propagatedBuildInputs = [ django ];
+  propagatedBuildInputs = [ django_2_0_2 ];
 
   meta = with stdenv.lib; {
     description = "Show all LogEntry objects in the Django admin site";

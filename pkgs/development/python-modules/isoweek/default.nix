@@ -1,4 +1,4 @@
-{ stdenv, fetchPypi, buildPythonPackage, mock }:
+{ stdenv, fetchPypi, buildPythonPackage }:
 
 buildPythonPackage rec {
   pname = "isoweek";
@@ -10,10 +10,6 @@ buildPythonPackage rec {
   };
 
   doCheck = false;
-
-  buildInputs = [ mock ];
-
-  # propagatedBuildInputs = [ ];
 
   meta = with stdenv.lib; {
     description = "The module provide the class Week. Instances represent specific weeks spanning Monday to Sunday.";
