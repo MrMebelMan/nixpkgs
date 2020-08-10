@@ -559,6 +559,8 @@ in {
 
   django-sesame = callPackage ../development/python-modules/django-sesame { };
 
+  django-countries = callPackage ../development/python-modules/django-countries { };
+
   bravado-core = callPackage ../development/python-modules/bravado-core { };
 
   breathe = callPackage ../development/python-modules/breathe { };
