@@ -1,17 +1,15 @@
-{ fetchFromGitHub, buildGoModule, lib, stdenv }:
+{ fetchgit, buildGoModule, lib, stdenv }:
 
 buildGoModule rec {
-  pname = "kratos";
-  version = "0.8.3-alpha.1.pre.0";
+  name = "kratos";
 
-  src = fetchFromGitHub {
-    owner = "ory";
-    repo = "kratos";
-    rev = "v${version}";
-    sha256 = "1225paf0x6lb6cb3q5f4lyz0r426ifx4x8145q7nsc6v64srck2y";
+  src = fetchgit {
+    url = "https://github.com/MrMebelMan/kratos";
+    rev = "627f4a1ddb378db84510a85013c4580a9d8024ad";
+    sha256 = "0q45cxw614b00ckm54r9y421hqqfx21yax8ir537n0f6p3bdjwmx";
   };
 
-  vendorSha256 = "10zhxbccjsp6hbmk2lnvbag6c92hz703mcaigaj4wvlf7glpldm6";
+  vendorSha256 = "0rxkrrpm7fn9aqmgr9p7vyp94ppcr43k2jcghy4i2qy3pjkm2sm1";
 
   subPackages = [ "." ];
 
