@@ -4,7 +4,7 @@ buildGoModule rec {
   name = "kratos";
 
   src = fetchgit {
-    url = "https://github.com/MrMebelMan/kratos";
+    url = "https://github.com/ory/kratos";
     rev = "627f4a1ddb378db84510a85013c4580a9d8024ad";
     sha256 = "0q45cxw614b00ckm54r9y421hqqfx21yax8ir537n0f6p3bdjwmx";
   };
