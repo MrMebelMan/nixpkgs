@@ -2,16 +2,16 @@
 
 buildGoModule rec {
   pname = "kratos";
-  version = "0.10.1";
+  version = "v0.11.1";
+  sha256 = "0031830qvkpkdlkqap5xlxzmjh4wg7n4jd8c1crvjh331zpqvp9d";
+  vendorSha256 = "sha256-3YI8uvXM7/3Kg7LuCjvECyqI8kLsrJzXgNmFUCR8Y60=";
 
   src = fetchFromGitHub {
-    owner = "ory";
+    owner = "MrMebelMan"; # A fork that adds support for API-based OIDC flows
     repo = "kratos";
-    rev = "v${version}";
-    hash = "sha256-Ld2N7w9jQLkzCww1Sex5nEBZf6e9XIUnbfPOjcFAYQA=";
+    rev = "3f5b41c235b88058894a95feaece072af750cfc7";
+    hash = "sha256-4pxp8V0KYhVxXVINQItIQSkzmbJRHLocuC25W5lc19Y=";
   };
-
-  vendorSha256 = "sha256-9zXoJ+c1aPWDqasechC4ModWE0+sfMqZzp/Pph/mYcs=";
 
   subPackages = [ "." ];
 
