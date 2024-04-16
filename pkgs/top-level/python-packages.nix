@@ -4467,6 +4467,8 @@ self: super: with self; {
 
   foxdot = callPackage ../development/python-modules/foxdot { };
 
+  foxdot-editor = callPackage ../development/python-modules/foxdot-editor { };
+
   fpdf = callPackage ../development/python-modules/fpdf { };
 
   fpdf2 = callPackage ../development/python-modules/fpdf2 { };
@@ -5713,6 +5715,8 @@ self: super: with self; {
   indexed-gzip = callPackage ../development/python-modules/indexed-gzip { inherit (pkgs) zlib; };
 
   indexed-zstd = callPackage ../development/python-modules/indexed-zstd { inherit (pkgs) zstd; };
+
+  indexed = callPackage ../development/python-modules/indexed { };
 
   infinity = callPackage ../development/python-modules/infinity { };
 
@@ -7056,6 +7060,12 @@ self: super: with self; {
   rtmixer = callPackage ../development/python-modules/rtmixer { };
 
   regress = callPackage ../development/python-modules/regress { };
+
+  renardo = callPackage ../development/python-modules/renardo { };
+
+  renardo-lib = callPackage ../development/python-modules/renardo-lib { };
+
+  renardoGatherer = callPackage ../development/python-modules/renardoGatherer { };
 
   mail-parser = callPackage ../development/python-modules/mail-parser { };
 
