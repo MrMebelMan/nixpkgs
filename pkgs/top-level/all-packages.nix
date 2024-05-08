@@ -9622,6 +9622,8 @@ with pkgs;
 
   kbfs = callPackage ../tools/security/keybase/kbfs.nix { };
 
+  keto = callPackage ../by-name/ke/keto/default.nix { };
+
   keybase-gui = callPackage ../tools/security/keybase/gui.nix { };
 
   keychain = callPackage ../tools/misc/keychain { };
